@@ -1,0 +1,7 @@
+services:
+  traffmonetizer:
+    build: .
+    env_file:
+      - .env
+    network_mode: host
+    restart: unless-stopped
